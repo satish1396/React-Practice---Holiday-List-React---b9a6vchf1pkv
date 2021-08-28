@@ -43,8 +43,8 @@ class App extends Component {
       <ol>
         {
           this.cityList.filter((cities)=>cities.country==='India')
-          .map((cities)=>{
-            const key = "location"+(index+1)
+          .map((cities,index)=>{
+            const key = "location"+(index+1) 
             return <li key={key}>{cities.name}</li>
           })
         }
